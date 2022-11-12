@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+}
+/* parent tag with ids applied center alignment to all text to show inheritance*/
+#unordered, #ordered {
+    text-align: center;
+    border: 2px dotted black;
+    margin: 30px;
+    width: 50%;
+    color:#df000f;
+}
+/* parent tags with class of list applied these to all lists */
+.list {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    color:goldenrod;
+    width: 30%; /*width does not cascade because of specificity */
+    padding:15px 30px;
+}
+/* children tags with class of likes applied these to all ul list and override parents styling */
+.likes {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color:darkkhaki;
+    text-align: left;
+ 
+}
+/* children tags with class of dislikes applied these to all ul list and override parents styling */
+.dislikes {
+    font-family: cursive;
+    font-size:18px;
+    color:darksalmon;
+    text-align:left;
+}
+/* styling ordered list ids to show cascading */
+#good {
+ color: #faeb00;
+}
+
+#family {
+    color: #ff00b3;
+}
+
+#cinema {
+    color: #cdcd00;
+}
+
+#coding {
+    color: #df000f;
+}
+
+#quality {
+    color: #efab00;
+}
+
+/* styling unordered list by ids to show cascading (dislikes retain their colors from parent id 'unordered'  */
+#meal {
+    font-size: 12px;
+}
+
+#up {
+    font-size: 14px;
+}
+
+#wait {
+    font-size: 16px;
+} 
+
+#power {
+    font-size: 18px;
+}
+
+#bug {
+    font-size: 20px;
+}
